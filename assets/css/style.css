@@ -1,0 +1,49 @@
+body {
+    background-image: url("../images/gr-stocks-q8P8YoR6erg-unsplash.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+.text-center {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.col-md-8 h2 {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.col-md-3 h5 {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(245, 222, 19, 0.685);
+}
+
+#movies img, #movie img{
+    width: 100%;
+}
+
+@media(min-widt:960px){
+
+#movies .col-md-3 .well{
+    height: 390px;
+}
+
+#movies .col-md-3 img{
+    height: 240px;
+}
+}
+
+.input-group {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container2 {
+    background-image: url("../images/ola-mishchenko-VRB1LJoTZ6w-unsplash.jpg");
+    background-size: cover;
+    margin: 0;
+    flex-wrap: wrap;
+}
