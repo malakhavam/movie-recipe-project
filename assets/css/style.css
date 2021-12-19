@@ -2,23 +2,44 @@ body {
     background-image: url("../images/gr-stocks-q8P8YoR6erg-unsplash.jpg");
     background-size: cover;
     margin: 0;
-}   
+}
 
-.text-center {
+.navbar-brand {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Staatliches', cursive;
+    font-size: 4rem;
+}
+
+.text-center, .col-md-3 h5, .container2 h3 {
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+input[type="text"] {
+    font-size: 18px;
+  }
+
+input::-webkit-input-placeholder {
+    font-size: 18px;
+}
+
+
+.background{
+    background-color: rgba(245, 222, 19, 0.685); 
+}
+
+.container, .container2 {
+    justify-content: space-between;
 }
 
 .col-md-8 h2 {
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-}
-
-.col-md-3 h5 {
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgba(245, 222, 19, 0.685);
 }
 
 #movies img, #movie img{
@@ -41,9 +62,8 @@ body {
     margin-bottom: 50px;
 }
 
-.container2 {
+#content {
     background-image: url("../images/ola-mishchenko-VRB1LJoTZ6w-unsplash.jpg");
     background-size: cover;
     margin: 0;
-    
 }

@@ -18,7 +18,7 @@ $.each(movies, (index, movie) => {
  <div class="col-md-3">
     <div class="card offset-1 well text-center">
     <img src="${movie.image}">
-    <h5>${movie.title}</h5>
+    <h5><span class="background">${movie.title}<span></h5>
     <a onclick="movieSelected('${movie.id}')" class="btn btn-primary" href="#">Movie Details</a>
     </div>
  </div>
@@ -97,32 +97,32 @@ async function sendApiRequest() {
 //function that process the data from API
 
 function useApiData(data) {
-    for (var i = 0; i < data.hits.length; i++){
+   // 3 random recipe options        
 document.querySelector("#content").innerHTML = `
 <div class="row">
-    <div class="card col-md-4 offset-1" style="width: 16rem;">
-    <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
+    <div class="card col-md-4 offset-1" style="width: 25rem;">
+    <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">${data.hits[i].recipe.label}</h5>
-        <p class="card-text">Calories: ${data.hits[i].recipe.calories}</p>
-        <a href="${data.hits[i].recipe.url}" target="_blank" class="btn btn-primary">See Recipe</a>
+        <h5 class="card-title">${data.hits[0].recipe.label}</h5>
+        <p class="card-text" style="color:white">Calories: ${data.hits[0].recipe.calories}</p>
+        <a href="${data.hits[0].recipe.url}" target="_blank" class="btn btn-primary">See Recipe</a>
     </div>
     </div>
 
-    <div class="card col-md-4 offset-1" style="width: 16rem;">
+    <div class="card col-md-4 offset-1" style="width: 25rem;">
     <img src="${data.hits[1].recipe.image}" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">${data.hits[1].recipe.label}</h5>
-        <p class="card-text">Calories: ${data.hits[1].recipe.calories}</p>
+        <p class="card-text" style="color:white">Calories: ${data.hits[1].recipe.calories}</p>
         <a href="${data.hits[1].recipe.url}" target="_blank" class="btn btn-primary">See Recipe</a>
     </div>
     </div>
 
-    <div class="card col-md-4 offset-1" style="width: 16rem;">
+    <div class="card col-md-4 offset-1" style="width: 25rem;">
     <img src="${data.hits[2].recipe.image}" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">${data.hits[2].recipe.label}</h5>
-        <p class="card-text">Calories: ${data.hits[2].recipe.calories}</p>
+        <p class="card-text" style="color:white">Calories: ${data.hits[2].recipe.calories}</p>
         <a href="${data.hits[2].recipe.url}" target="_blank" class="btn btn-primary">See Recipe</a>
     </div>
     </div>
@@ -133,7 +133,7 @@ document.querySelector("#content").innerHTML = `
     }
 
 
-}
+
 
 
 
