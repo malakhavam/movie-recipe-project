@@ -2,7 +2,7 @@ body {
     background-image: url("../images/gr-stocks-q8P8YoR6erg-unsplash.jpg");
     background-size: cover;
     margin: 0;
-}
+}   
 
 .text-center {
     color: black;
@@ -45,5 +45,5 @@ body {
     background-image: url("../images/ola-mishchenko-VRB1LJoTZ6w-unsplash.jpg");
     background-size: cover;
     margin: 0;
-    flex-wrap: wrap;
+    
 }
